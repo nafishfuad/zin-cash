@@ -12,7 +12,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="bg-slate-800">
+    <!-- main container -->
     <section class="max-w-md min-h-screen mx-auto py-6 bg-white">
+
+      <!-- hero section -->
       <section class="py-4 border-b-1 border-gray-200">
         <div class="flex justify-around items-center">
           <div class="flex items-center">
@@ -20,7 +23,7 @@
               <img class="w-12" src="assets/Group.png" alt="Icon" />
             </div>
             <div class="ml-2">
-              <h2 class="font-extrabold text-xl">$45000</h2>
+              <h2 class="font-extrabold text-xl">$ <span id="main-balance">45000</span></h2>
               <h3 class="text-xl text-gray-500">Available Balance</h3>
             </div>
           </div>
@@ -32,6 +35,8 @@
         </div>
       </section>
 
+      <!-- options section  -->
+
       <section class="p-6">
         <h1 class="text-2xl font-extrabold mb-3">🔥 Welcome to Payooo!</h1>
         <p class="text-base font-normal text-gray-500 mb-3">
@@ -40,7 +45,7 @@
         </p>
 
         <div class="grid grid-cols-3 gap-3 p-2 mt-5">
-          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+          <div id="add-money-box" class="box border border-gray-300 rounded-xl p-4 text-center">
             <img
               class="w-6 mx-auto"
               src="assets/wallet1.png"
@@ -48,7 +53,7 @@
             />
             <h4 class="text-sm text-gray-600">Add Money</h4>
           </div>
-          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+          <div id="cash-out-box" class="box border border-gray-300 rounded-xl p-4 text-center">
             <img
               class="w-6 mx-auto"
               src="assets/send1.png"
@@ -91,7 +96,9 @@
         </div>
       </section>
 
-      <section class="px-6">
+
+      <!-- add money section -->
+      <section id="add-money-section" class="px-6">
         <h2 class="font-semibold text-lg">Add Money</h2>
         <div class="cursor-pointer">
           <div class="hero-content flex-col lg:flex-row-reverse">
@@ -107,18 +114,46 @@
                   </select>
 
                   <label class="label cursor-pointer">Bank Account Number</label>
-                  <input type="number" class="input rounded-2xl cursor-pointer" placeholder="Enter 11 digit account number" />
+                  <input type="number" id="acc-number" class="input rounded-2xl cursor-pointer" placeholder="Enter 11 digit account number"/>
                   <label class="label cursor-pointer">Amount to Add</label>
-                  <input type="number" class="input rounded-2xl cursor-pointer" placeholder="Add Amount" />
+                  <input id="amount-to-add" type="number" class="input rounded-2xl cursor-pointer" placeholder="Add Amount" />
                   <label class="label cursor-pointer">Pin Number</label>
-                  <input type="password" class="input rounded-2xl cursor-pointer" placeholder="Enter 4 digit pin number" />
-                  <button class="btn btn-neutral mt-4 rounded-2xl cursor-pointer">Add Money</button>
+                  <input id="pin-number" type="text" class="input rounded-2xl cursor-pointer" placeholder="Enter 4 digit pin number" />
+                  <button id="add-money-btn" class="btn btn-neutral mt-4 rounded-2xl cursor-pointer">Add Money</button>
                 </fieldset>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <!-- Cash Out section -->
+      <section id="cashOut-section" class="px-6">
+        <h2 class="font-semibold text-lg">Cash Out</h2>
+        <div class="cursor-pointer">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label cursor-pointer">Agent Number</label>
+                  <input type="number" id="agent-number" class="input rounded-2xl cursor-pointer" placeholder="Enter 11 digit agent number"/>
+                  <label class="label cursor-pointer">Amount</label>
+                  <input id="amount-to-cashOut" type="number" class="input rounded-2xl cursor-pointer" placeholder="Enter amount to withdraw" />
+                  <label class="label cursor-pointer">Pin Number</label>
+                  <input id="pin-number-cashout" type="text" class="input rounded-2xl cursor-pointer" placeholder="Enter 4 digit pin number" />
+                  <button id="cashOut-btn" class="btn btn-neutral mt-4 rounded-2xl cursor-pointer">Cash Out</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
     </section>
+
+    <script src="./scripts/addMoney.js"></script>
+    <script src="./scripts/cashOut.js"></script>
+    <script src="./scripts/toggle.js"></script>
+
   </body>
 </html>
