@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zin Cash - fastest MFS system</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+      <header>
+        <nav class="mt-6 flex justify-center items-center">
+          <div
+            class="mt-10 elative flex items-center justify-center w-9/12 mb-10"
+          >
+            <img
+              class="w-48 absolute"
+              src="assets/bg.png"
+              alt="Logo Background"
+            />
+            <img class="w-16" src="assets/Group.png" alt="Logo Icon" />
+          </div>
+        </nav>
+      </header>
+      <!-- login form -->
+      <form class="">
+        <div class="hero-content flex-col lg:flex-row-reverse">
+          <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+            <div class="card-body">
+              <fieldset class="fieldset">
+                <label class="label">Account Number</label>
+                <input value="01827336543" id="account-number" type="number" class="input" placeholder="number" required />
+                <label class="label">Pin Number</label>
+                <input value="1234" id="pin-number" type="text" class="input" placeholder="PIN" required />
+                <div><a class="link link-hover">Forgot pin?</a></div>
+                <button id="btn-login" class="btn btn-neutral mt-4">Login</button>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
