@@ -24,6 +24,8 @@ document
           `;
           transactionList.appendChild(div);
 
+          alert('khamba 10% nibe');
+
         } else {
           alert("Invalid Pin number");
         }

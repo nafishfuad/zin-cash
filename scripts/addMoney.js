@@ -25,6 +25,8 @@ document
             <span id="datetime" class="text-sm "></span>
           `
           transactionList.appendChild(div);
+
+          alert('transaction khamba');
           
           
         } else {
