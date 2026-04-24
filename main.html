@@ -1,11 +1,124 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zin Cash - Home</title>
-</head>
-<body>
-    <h1>Khambaaaaa</h1>
-</body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-white">
+      <section class="py-4 border-b-1 border-gray-200">
+        <div class="flex justify-around items-center">
+          <div class="flex items-center">
+            <div>
+              <img class="w-12" src="assets/Group.png" alt="Icon" />
+            </div>
+            <div class="ml-2">
+              <h2 class="font-extrabold text-xl">$45000</h2>
+              <h3 class="text-xl text-gray-500">Available Balance</h3>
+            </div>
+          </div>
+          <div>
+            <button class="btn text-xl text-gray-500 font-normal rounded-xl">
+              Log Out
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="p-6">
+        <h1 class="text-2xl font-extrabold mb-3">🔥 Welcome to Payooo!</h1>
+        <p class="text-base font-normal text-gray-500 mb-3">
+          Enjoy easy and convenient financial services with us. Cashout charge
+          is low and
+        </p>
+
+        <div class="grid grid-cols-3 gap-3 p-2 mt-5">
+          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+            <img
+              class="w-6 mx-auto"
+              src="assets/wallet1.png"
+              alt="add money icon"
+            />
+            <h4 class="text-sm text-gray-600">Add Money</h4>
+          </div>
+          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+            <img
+              class="w-6 mx-auto"
+              src="assets/send1.png"
+              alt="add money icon"
+            />
+            <h4 class="text-sm text-gray-600">Cash Out</h4>
+          </div>
+          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+            <img
+              class="w-6 mx-auto"
+              src="assets/money1.png"
+              alt="add money icon"
+            />
+            <h4 class="text-sm text-gray-600">Transfer Money</h4>
+          </div>
+          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+            <img
+              class="w-6 mx-auto"
+              src="assets/bonus1.png"
+              alt="add money icon"
+            />
+            <h4 class="text-sm text-gray-600">Get Bonus</h4>
+          </div>
+          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+            <img
+              class="w-6 mx-auto"
+              src="assets/purse1.png"
+              alt="add money icon"
+            />
+            <h4 class="text-sm text-gray-600">Pay Bill</h4>
+          </div>
+          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+            <img
+              class="w-6 mx-auto"
+              src="assets/transaction1.png"
+              alt="add money icon"
+            />
+            <h4 class="text-sm text-gray-600">Transactions</h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-6">
+        <h2 class="font-semibold text-lg">Add Money</h2>
+        <div class="cursor-pointer">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <legend>Select A Bank</legend>
+                  <select class="select rounded-2xl cursor-pointer">
+                    <option disabled selected>Select Bank</option>
+                    <option value="bkash">Bkash</option>
+                    <option value="nagad">Nagad</option>
+                    <option value="upay">Upay</option>
+                  </select>
+
+                  <label class="label cursor-pointer">Bank Account Number</label>
+                  <input type="number" class="input rounded-2xl cursor-pointer" placeholder="Enter 11 digit account number" />
+                  <label class="label cursor-pointer">Amount to Add</label>
+                  <input type="number" class="input rounded-2xl cursor-pointer" placeholder="Add Amount" />
+                  <label class="label cursor-pointer">Pin Number</label>
+                  <input type="password" class="input rounded-2xl cursor-pointer" placeholder="Enter 4 digit pin number" />
+                  <button class="btn btn-neutral mt-4 rounded-2xl cursor-pointer">Add Money</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
 </html>
