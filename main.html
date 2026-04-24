@@ -13,7 +13,7 @@
   </head>
   <body class="bg-slate-800">
     <!-- main container -->
-    <section class="max-w-md min-h-screen mx-auto py-6 bg-white">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-slate-100">
 
       <!-- hero section -->
       <section class="py-4 border-b-1 border-gray-200">
@@ -44,7 +44,7 @@
           is low and
         </p>
 
-        <div class="grid grid-cols-3 gap-3 p-2 mt-5">
+        <div class="grid grid-cols-3 gap-3 p-4 mt-5 bg-white rounded-lg">
           <div id="add-money-box" class="box border border-gray-300 rounded-xl p-4 text-center">
             <img
               class="w-6 mx-auto"
@@ -85,7 +85,7 @@
             />
             <h4 class="text-sm text-gray-600">Pay Bill</h4>
           </div>
-          <div class="box border border-gray-300 rounded-xl p-4 text-center">
+          <div id="transaction-box" class="box border border-gray-300 rounded-xl p-4 text-center">
             <img
               class="w-6 mx-auto"
               src="assets/transaction1.png"
@@ -106,11 +106,11 @@
               <div class="card-body">
                 <fieldset class="fieldset">
                   <legend>Select A Bank</legend>
-                  <select class="select rounded-2xl cursor-pointer">
+                  <select id="mfs" class="select rounded-2xl cursor-pointer">
                     <option disabled selected>Select Bank</option>
-                    <option value="bkash">Bkash</option>
-                    <option value="nagad">Nagad</option>
-                    <option value="upay">Upay</option>
+                    <option value="Bkash">Bkash</option>
+                    <option value="Nagad">Nagad</option>
+                    <option value="Upay">Upay</option>
                   </select>
 
                   <label class="label cursor-pointer">Bank Account Number</label>
@@ -148,9 +148,14 @@
         </div>
       </section>
 
+      <section id="transaction-history" class="px-6 p-6">
+        <h2 class="text-2xl font-medium mb-4 text-center">Transaction History</h2>
+          
+      </section>
+
 
     </section>
-
+    <script src="./utilities/utilities.js"></script>
     <script src="./scripts/addMoney.js"></script>
     <script src="./scripts/cashOut.js"></script>
     <script src="./scripts/toggle.js"></script>
